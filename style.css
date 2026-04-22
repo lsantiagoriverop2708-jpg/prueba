@@ -1,70 +1,84 @@
-/* Reset básico */
+/* Configuración General */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #c3ec52, #0ba360);
-    color: #fff;
+    background-color: #121212; /* Fondo oscuro */
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    line-height: 1.6;
 }
 
-/* Contenedor */
 .container {
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #1e1e1e;
+    max-width: 500px;
+    width: 90%;
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
 }
 
-/* Header */
-header h1 {
-    font-size: 2.5em;
+/* Encabezado */
+h1 {
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
+.highlight {
+    color: #ff5722; /* Color naranja deportivo */
+}
+
 header p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-}
-
-/* Main */
-main p {
-    margin: 20px 0;
-    font-size: 1.2em;
-}
-
-.icon {
-    width: 80px;
+    color: #bbbbbb;
     margin-bottom: 20px;
 }
 
-button {
-    padding: 12px 25px;
-    font-size: 1em;
-    background-color: #ffbb33;
-    color: #333;
+/* Contenido Principal */
+.icon {
+    width: 100px;
+    margin: 20px 0;
+    filter: drop-shadow(0 0 10px rgba(255, 87, 34, 0.3));
+}
+
+.services {
+    margin: 20px 0;
+}
+
+strong {
+    color: #ff5722;
+}
+
+/* Botón */
+.btn-join {
+    background-color: #ff5722;
+    color: white;
     border: none;
-    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: transform 0.2s, background-color 0.2s;
+    margin-top: 20px;
 }
 
-button:hover {
-    background-color: #ffdd66;
+.btn-join:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
 }
 
-/* Footer */
+/* Pie de página */
 footer {
     margin-top: 30px;
-    font-size: 0.9em;
-    color: #eee;
+    font-size: 0.8rem;
+    color: #666;
 }
